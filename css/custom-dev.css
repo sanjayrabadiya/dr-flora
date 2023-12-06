@@ -212,9 +212,11 @@ textarea:-moz-placeholder {color: var(--black);}
 .btn-custom{border-radius: 50px;color:var(--black);font-family: var(--primary-font);font-size: 26px;font-style: normal;font-weight: 600;line-height: 1.27;display: flex;background-color: #66774B;padding: 2px 2px 1px;display: inline-flex; justify-content: center; align-items: center;}
 .btn-custom span{padding: 15px 30px;border-radius: 50px;background: linear-gradient(96.54deg, #C0D1A7 -1.55%, #B9CD9F 9.43%, #B5CA9A 24.41%, #ACBF90 67.33%, #ABBE8F 70.33%, #A5B88B 98.28%);box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25) inset;}
 
-.slick-arrow {position: absolute;top: 50%;transform: translateY(-50%);z-index: 1;cursor: pointer;background-color: var(--pink-dark);}
-.slick-arrow span {background-color: var(--green);width: 62px;height: 62px;display: block;border-radius: 100%;color: var(--white);text-align: center;line-height: 62px;font-size: 30px;}
-.slick-arrow:hover span{background-color: var(--red);}
+.slick-arrow {position: absolute;top: 50%;transform: translateY(-50%);z-index: 1;cursor: pointer;aspect-ratio: 100/100;}
+.slick-arrow::before{content: ""; width: 32px; aspect-ratio: 100/50; display: inline-block;vertical-align: middle;}
+.slick-prev::before{background-image: url('../images/arrowleft.svg');}
+.slick-next::before{background-image: url('../images/arrowright.svg');}
+
 .slick-next{right: 0;}
 .slick-prev{left: 0;}
 
@@ -222,6 +224,7 @@ textarea:-moz-placeholder {color: var(--black);}
 .line{width: 181px;height: 6px;border-radius: 4px;background: #B5CA9A;margin: 12px 0;}
 .sec-heading-two{color: var(--gold-color);font-family: var(--second-font);font-size: 80px;font-style: normal;font-weight: 400;line-height: 0.97;letter-spacing: 4px;}
 .v-line{width: 1px; height: 91px;background: var(--black);margin: 0 auto;}
+.sub-heading{color: #282828;font-family:var(--primary-font);font-size: 50px;font-style: normal;font-weight: 600;line-height: 0.79;margin-top: 15px;}
 
 /************************************************** header start  ***********************************************/
 .main-header{background-color: #F7E8DF;}
@@ -272,6 +275,94 @@ bottom: -100px; z-index: 1;}
 .help-box .item-box .content{margin-top: 24px;}
 .help-box .item-box .content h3{color: #282828;font-family: var(--primary-font);font-size: 55px;font-style: normal;font-weight: 600;line-height: 1.42}
 .see-services{margin-top: 38px;}
+.free-resources{margin: 142px 0 115px;}
+.free-resources .heading{position: absolute;width: 100%;text-align: center;z-index: 1;top: 0;left: 0;}
+.free-resources .image-box{width: 669px;}
+.free-resources .image-box img{width: 100%;aspect-ratio: 100/136;object-fit: cover;object-position: center center;}
+.free-resources .list{width: 696px;border-top: 2px solid #282828;margin-bottom: 66px;}
+.free-resources .list .item{display: flex;align-items: center;border-bottom: 2px solid #282828;padding: 47px 0;}
+.free-resources .list .icon-box{width: 140px;text-align: center;}
+.free-resources .list .icon-box img{margin: 0 auto;max-height: 60px;width: auto;}
+.free-resources .list .content{width: calc(100% - 140px);}
+.free-resources .list .content h3{color: #282828;font-size: 41.43px;font-style: normal;line-height: 1.63;font-weight: normal;font-family: var(--primary-font);}
+.free-resources .list .content h4{color: #282828;font-size: 34.525px;font-weight: normal;font-style: normal;font-weight: normal;line-height: 1;font-family: var(--primary-font);}
+.free-resources .sec-heading-two {font-size: 74px;margin-top: 10px;}
+
+.trending-latest{background: #FFEEE6;padding: 123px 0 110px;}
+.trending-latest .custom-container{max-width:1585px;}
+.tabs {padding: 0;}
+.tabs .tab-nav {text-align: left;margin: 0 ;}
+.tabs .tab-nav li {position: relative;}
+.tabs .tab-nav li span {transition: all 0.25s ease-in-out;cursor: pointer;user-select: none;}
+.tabs .tab {display: none;}
+.tabs .tab.active {display: block;}
+
+.main-tab{position: absolute;left: 0;top: 65px;padding-left: 44px;}
+.main-tab ul{display: flex;}
+.main-tab ul li {text-align: center;font-family: var(--primary-font);font-size: 16.215px;font-style: normal;font-weight: 400;line-height: 1.2;text-transform: uppercase;letter-spacing: 0.73px;}
+.main-tab ul li span{color: #000;padding: 9px 52px 7px;background-color: var(--white); display: block;}
+.main-tab ul li.active span{background-color: var(--gold-color);color: var(--white);}
+.sub-tabs{display: flex;align-items: flex-end;}
+.sub-tab-right{width: 968px;aspect-ratio: 100/71.5;}
+.sub-tab-right img{width: 100%;height: 100%;object-fit: cover;object-position: center center;}
+.sub-tab-left{width: 587px;margin-bottom: 73px;}
+.sub-tab-left ul li{border-bottom: 3px solid var(--black);padding: 17px 0 12px 44px;display: block;}
+.sub-tab-left ul li::after{content: "";position: absolute;right: -40px;width: 85px;height: 6px;background-color: var(--gold-color);z-index: 1;top: 50%; transform: translateY(-50%); display: none;}
+.sub-tab-left ul li h4{color: #282828;font-family: var(--primary-font);font-size: 22.393px;font-style: normal;font-weight: 600;line-height:1;letter-spacing: 1.689px;text-transform: uppercase;}
+.sub-tab-left ul li p{margin-top: 5px;font-size: 22px;}
+.sub-tab-left ul li.active{background-color: var(--white);}
+.sub-tab-left ul li.active::after{display: block;}
+.sub-tab-left h2{text-transform: uppercase;font-size: 40px;margin-bottom: 47px;padding-left: 44px;}
+
+.favorite-shop{background-color: #F3C6C3;padding: 115px 0 66px;}
+.favorite-shop .wrapper{z-index: 1;}
+.favorite-shop::before,
+.favorite-shop::after{content: "";background-image: url('../images/branding-pink.png');position: absolute;top: 0;width: 273px;height: 100%;background-size: cover;}
+.favorite-shop::before{left: 0;}
+.favorite-shop::after{right:0;transform: scaleX(-1);}
+.favorite-shop h2{font-size: 58px;}
+.favorite-shop h2 span{font-size: 67.102px;font-family: var(--second-font);}
+.product-slider{background-color: var(--white);margin: 65px 0;border: 1.183px solid #000;padding: 32px 68px;}
+.product-slider .product-image{width: 100%;aspect-ratio: 100/91;}
+.product-slider .product-image img{width: 100%;height: 100%;object-fit: cover;object-position: center center;}
+.product-slider .slick-next{right: 35px;}
+.product-slider .slick-prev{left: 35px;}
+
+.raves-reviews{padding: 98px 0;}
+.raves-reviews .custom-container{max-width: 1585px;}
+.raves-reviews-slider{margin-top: 46px;background: #FFEEE6;padding: 86px 174px;}
+.raves-reviews-slider .item{display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;}
+.raves-reviews-slider .image-box{width: 568px;aspect-ratio: 100/104.5;}
+.raves-reviews-slider .image-box img{width: 100%;height: 100%;object-fit: cover;object-position: center center;}
+.raves-reviews-slider .content{width: 543px;}
+.raves-reviews-slider .content h5{color: #282828;font-family: var(--heading-font);font-size: 35px;font-style: normal;font-weight: 400;margin-top: 27px;}
+.raves-reviews-slider .slick-next{right: 90px;}
+.raves-reviews-slider .slick-prev{left: 90px;}
+
+.courses{padding: 90px 0;background: #F3C6C3;}
+.courses .custom-container{max-width: 1750px;}
+.courses .wrapper{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;background-color: var(--white);padding: 49px 56px;}
+.courses .image-box{width: 588px;aspect-ratio: 100/100;}
+.courses .image-box img{width: 100%;height: 100%;object-fit: cover;object-position: center center;}
+.courses .content{width: 870px;position: relative;}
+.courses .content .heading h2{text-transform: uppercase;padding: 23px;border-bottom: 1px solid var(--black);}
+.courses .content .details{padding: 57px 0;}
+.courses .content .details-left{width: 543px;position: relative;}
+.courses .content .details-right{width: 272px;position: relative;}
+.courses .content .details-right li{padding: 18px 0;}
+.courses .content .details-right li a{color: #282828;text-align: center;font-size: 30px;font-style: normal;font-weight: 400;line-height: 2;background: #B5CA9A;display: block;}
+.courses .content .details-right li:nth-child(2) a,
+.courses .content .details-right li:nth-child(5) a{background: #D1A761;}
+.courses .content .details-right li:nth-child(3) a,
+.courses .content .details-right li:nth-child(6) a{background: #D4AD97;}
+.thanks-content h2{color: #282828;}
+.thanks-content {position: absolute;
+  bottom: -80px;
+  width: 100%;
+  text-align: center;
+  right: 0;}
+
+
 
 
 /************************************************** Homepage End  ***********************************************/
