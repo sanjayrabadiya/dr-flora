@@ -53,6 +53,37 @@ $(document).ready(function(){
 			nextArrow:"<div class='slick-next'></div>",		    
 		});
 	}
+	if($('.instagram-slider').length > 0) {
+		$('.instagram-slider').slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 6,
+		    slidesToScroll: 1,
+		    arrows: true,
+		    prevArrow:"<div class='slick-prev'></div>",
+			nextArrow:"<div class='slick-next'></div>",		
+			responsive: [
+				{
+					breakpoint: 767,
+					settings: {
+					  	slidesToShow: 5
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+					  	slidesToShow: 4
+					}
+				},
+				{
+					breakpoint: 400,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]    
+		});
+	}
 	
 
 	if($('.tab-nav').length > 0) {
