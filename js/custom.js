@@ -3,7 +3,12 @@
 
 
 $(document).ready(function(){
-	
+	$('.menu-icon').click(function(){
+		$('body').addClass('showmenu');
+	});
+	$('.menu-icon-close,.menu ul li a').click(function(){
+		$('body').removeClass('showmenu');
+	});
 	
 	if($('.product-slider').length > 0) {
 		$('.product-slider').slick({
@@ -104,8 +109,16 @@ function checkSlider(){
         slidesToShow: 1,
         slidesToScroll: 1,
 		arrows:true,
-		prevArrow:"<div class='slick-prev'><span class='icon-left-open'></span></div>",
-		nextArrow:"<div class='slick-next'><span class='icon-right-open'></span></div>",
+		prevArrow:"<div class='slick-prev'></div>",
+		nextArrow:"<div class='slick-next'></div>",
+      });
+	  $('.client-logo').slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+		arrows:true,
+		prevArrow:"<div class='slick-prev'></div>",
+		nextArrow:"<div class='slick-next'></div>",
       });
       slickSliderActive = true;
     }
@@ -113,6 +126,7 @@ function checkSlider(){
   else {
     if(slickSliderActive == true) {
       $('.mobile-slider').slick('unslick');
+	  $('.client-logo').slick('unslick');
       slickSliderActive = false;
     }
     
