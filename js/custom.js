@@ -67,6 +67,7 @@ $(document).ready(function(){
 		    arrows: false,		   	    
 		});
 	}
+
 	if($('.instagram-slider').length > 0) {
 		$('.instagram-slider').slick({
 			dots: false,
@@ -97,12 +98,20 @@ $(document).ready(function(){
 				}
 			]    
 		});
-	}
-	
+	}	
 
 	if($('.tab-nav').length > 0) {
 		$('.tab-nav span').on('click', function() {
 			$([$(this).parent()[0], $($(this).data('href'))[0]]).addClass('active').siblings('.active').removeClass('active');
+		});
+	}
+	if($('.faq-accordion').length > 0){
+		$('.faq-accordion .item').click(function(){
+			$(this).toggleClass(' active ');
+			$(this).siblings().removeClass(' active '); 
+			$('.faq-answer').stop().slideUp();
+			$('.active .faq-answer').stop().slideDown();
+			return false;
 		});
 	}
 		
@@ -137,6 +146,14 @@ function checkSlider(){
 		prevArrow:"<div class='slick-prev'></div>",
 		nextArrow:"<div class='slick-next'></div>",
       });
+	  $('.coaching-box').slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+		arrows:true,
+		prevArrow:"<div class='slick-prev'></div>",
+		nextArrow:"<div class='slick-next'></div>",
+      });
       slickSliderActive = true;
     }
   } 
@@ -145,6 +162,7 @@ function checkSlider(){
       $('.mobile-slider').slick('unslick');
 	  $('.client-logo').slick('unslick');
 	  $('.client-logo-horizone').slick('unslick');
+	  $('.coaching-box').slick('unslick');
       slickSliderActive = false;
     }
     
