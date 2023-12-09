@@ -489,6 +489,7 @@ bottom: -100px; z-index: 1;}
 .coaching-box{display: flex;justify-content: space-between;gap:36px;margin-top: 85px;}
 .coaching-box .item{width: 33.33%;}
 .coasching-item{background: #FFF6F1;padding: 32px 50px 44px;height: 100%;}
+.coasching-item .desc p + p{margin-top: 15px;}
 .main-head h4{color: #282828;text-align: center;font-family: var(--primary-font);font-size: 45px;font-style: normal;font-weight: 600;line-height: 1.11}
 .border-line{border:1px solid #D9D9D9;margin: 34px auto;width: 80%;}
 .coaching-button {margin: 40px 0 0;text-align: center;}
@@ -542,10 +543,32 @@ bottom: -100px; z-index: 1;}
 .process-list p{margin-top: 45px;max-width: 378px;margin-left: auto;margin-right: auto;text-align: center;}
 .book-call{margin-top: 80px;text-align: center;}
 .book-call a{text-transform: uppercase;}
-
-
-
 /************************************************** Service end  ***********************************************/
+/************************************************** Course Start  ***********************************************/
+.digital-courses-banner{padding: 80px 0;}
+.digital-courses-banner .line{margin: 15px auto;}
+.digital-courses-banner .heading p{max-width: 1018px;margin: 0 auto;}
+.couaching-box-two .item{width: 50%;}
+.get-in-touch{padding: 70px 0;background: #FFEEE6;}
+.get-in-touch .custom-container{max-width: 1680px}
+.get-in-touch .wrapper{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: flex-end;}
+.get-in-touch .contact-information{width: 32.125%;border:1px solid var(--black);aspect-ratio: 100/92.3;text-align: center;position: relative;display: flex;align-items: end;margin-bottom: 103px;}
+.get-in-touch .contact-information .logo {position: absolute;left: 0;right: 0;margin: 0 auto;top: -134px;
+width: 240px;padding: 10px;background: #ffeee6;}
+.get-in-touch .contact-information .logo  img{margin: 0 auto;width: 100%; aspect-ratio: 100/100;}
+.get-in-touch .contact-information .content{max-width: 74%;margin: 0 auto 50px;text-align: center;}
+.get-touch-form{width: 65.82%;}
+.gettouchform{margin-top: 64px;}
+.det-touch-form-data .field{position: relative;width: 100%;}
+.det-touch-form-data input,
+.det-touch-form-data textarea{color: #282828;font-family: var(--primary-font);font-size: 32px;font-style: normal;font-weight: 600;line-height: 2.44;padding: 13px 12px 12px 53px;width: 100%;margin-bottom: 14px;border:0;}
+.det-touch-form-data textarea{min-height: 253px;}
+.det-touch-form-data .box{display: flex;justify-content: space-between;gap: 24px;}
+.det-touch-form-data .box .field{width: 50%;}
+.det-touch-form-data .send-button{margin-top: 32px;}
+.det-touch-form-data .send-button button span{min-width: 152px;}
+
+/************************************************** Course End  ***********************************************/
 @media only screen and (min-width: 768px){
   .display-mobile{display: none;}
 }
@@ -644,6 +667,7 @@ bottom: -100px; z-index: 1;}
   .process-list .item .bg-circle {height: 355px;}
   .process-list .circle-box .icon h3 {font-size: 30px;margin-top: 15px;}
   .process-list .item .bg-circle::before {width: 60px;height: 4px;}
+  .digital-courses-banner{padding: 75px 0;}
 
 
 }
@@ -783,6 +807,15 @@ bottom: -100px; z-index: 1;}
   .process-list .item .bg-circle::before {width: 47px;height: 4px;}
   .process-list p {margin-top: 20px;}
   .book-call {margin-top: 30px;}
+  .digital-courses-banner{padding: 40px 0;}
+  .det-touch-form-data input, .det-touch-form-data textarea {font-size: 24px;line-height: normal;padding: 13px 12px 12px 20px;}
+  .det-touch-form-data .send-button {margin-top: 15px;}
+  .gettouchform {margin-top: 30px;}
+  .get-in-touch {padding: 40px 0;}
+  .get-in-touch .contact-information .logo {top: -102px;width: 180px;}
+  .get-in-touch .contact-information .content {max-width: 85%;margin: 0 auto 20px;}
+  .get-in-touch .contact-information {margin-bottom: 90px;}
+
 
 }
  
@@ -960,6 +993,19 @@ bottom: -100px; z-index: 1;}
   .process-list .item .bg-circle::before {width: 38px;height: 2px;}
   .process-list p {margin-top: 16px;}
   .book-call {margin-top: 25px;}
+
+  .digital-courses-banner{padding: 25px 0;}
+  .get-in-touch{padding: 25px 0;}
+  .get-in-touch .contact-information .logo {width: 130px; top: -70px;}
+  .get-in-touch .contact-information {width: 40%;margin-bottom: 62px;}
+  .get-touch-form{width: 57%;}
+  .det-touch-form-data input, .det-touch-form-data textarea {font-size: 18px;padding: 12px;line-height: normal;}
+  .det-touch-form-data .box {gap: 14px;}
+  .det-touch-form-data textarea {min-height: 180px;}
+  .det-touch-form-data .send-button {margin-top: 0;}
+  .get-in-touch .contact-information .content {margin: 0 auto 20px;    max-width: 85%;}
+  .get-in-touch .contact-information .content h2{margin-bottom: 20px;}
+  .gettouchform { margin-top: 20px;}
 
 }
 @media only screen and (min-width: 768px){
@@ -1199,8 +1245,23 @@ bottom: -100px; z-index: 1;}
   .process-list .item .bg-circle::before {width: 5px;height: 100%;left: 50%;top: 97%;margin-left: 0;}
   .process-list .item .bg-circle img{    transform: rotate(90deg);}
   .book-call{margin-top: 15px;}
-
+  .digital-courses-banner{padding: 25px 0;}
+  .get-in-touch{padding: 25px 0;}
   
+  .get-in-touch .contact-information{width: 100%;margin-bottom: 0;flex-direction: column;    aspect-ratio: inherit;}
+  .get-touch-form{width: 100%;margin-top: 15px;}
+  .get-touch-form .sec-heading {margin-bottom: 15px;}
+  .get-in-touch .contact-information .logo{width: 150px; top:0;position: relative;}
+  .get-in-touch .contact-information .content{padding:0 20px 20px;margin: 0;max-width: 100%;}
+  .gettouchform{margin-top: 0;}
+  
+  .det-touch-form-data .box{flex-wrap: wrap;gap: 0;}
+  .det-touch-form-data .box .field{width: 100%;}
+  .det-touch-form-data input, 
+  .det-touch-form-data textarea {font-size: 18px;padding: 8px 12px 8px 12px;line-height: normal;}
+  .det-touch-form-data textarea {min-height: 140px;}
+  .det-touch-form-data .send-button {margin-top: 0;}
+
   
 }
 @media only screen and (max-width: 575px){
