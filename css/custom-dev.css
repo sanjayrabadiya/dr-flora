@@ -216,9 +216,13 @@ textarea:-moz-placeholder {color: var(--black);}
 .slick-arrow::before{content: ""; width: 32px; aspect-ratio: 100/50; display: inline-block;vertical-align: middle;    background-size: cover;}
 .slick-prev::before{background-image: url('../images/arrowleft.svg');}
 .slick-next::before{background-image: url('../images/arrowright.svg');}
-
 .slick-next{right: 0;}
 .slick-prev{left: 0;}
+.slick-dots{display: flex;justify-content: center;}
+.slick-dots li{margin: 0 8px;padding: 3x;}
+.slick-dots li button{width: 12px;background-color:#e1e1e1;border:0;border-radius: 100%;font-size: 0;aspect-ratio: 100/100;padding: 0;}
+.slick-dots li.slick-active{padding: 0;}
+.slick-dots li.slick-active button{width: 18px;background-color: #F3C6C3;}
 
 .sec-heading{color: #323232;font-family: var(--heading-font);font-size: 66.259px;font-style: normal;font-weight: 400;line-height: 1.18;}
 .line{width: 181px;height: 6px;border-radius: 4px;background: #B5CA9A;margin: 12px 0;}
@@ -418,17 +422,135 @@ bottom: -100px; z-index: 1;}
 .lets-do-button {margin-top: 30px;}
 .lets-do-button button{font-size: 20px;}
 .lets-do-button button span{padding-top: 15px;padding-bottom: 10px;}
-
-
 /************************************************** Homepage End  ***********************************************/
-
-
+/************************************************** About Start  ***********************************************/
+.about-sec{padding: 180px 0 165px;}
+.about-sec .custom-container{max-width: 1570px;}
+.about-sec .wrapper{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.about-sec .content{width: 52.75%;padding-top: 30px;}
+.about-sec .images{width: 42.34%;position: relative;}
+.about-sec .images img{width: 100%;aspect-ratio: 100/137.27;object-fit: cover;object-position: center center;}
+.about-sec .images::after{content: "";width: 321px; aspect-ratio: 100/209;background: #F7E8DF;position: absolute;top:-44px;right: -55px; z-index: -1;}
+.about-sec .line{margin: 30px 0;}
+.about-sec .content p + p{margin-top: 45px;}
+.about-sec .other-info {margin-top: -45px;position: relative;z-index: 1;}
+.other-about-sec{background: #F3C6C3;padding:195px 0 ;}
+.other-about-sec::before,
+.other-about-sec::after{content: "";background-image: url('../images/branding-pink.png');position: absolute;top: 0;width: 273px;height: 100%;background-size: contain;background-repeat: no-repeat;}
+.other-about-sec::before{left: 0;}
+.other-about-sec::after{right:0;transform: scaleX(-1);}
+.other-about-sec .custom-container{max-width: 1375px;}
+.other-about-sec p{font-size: 40px}
+.other-about-sec .wrapper{z-index: 2;}
+.about-form{padding: 74px 0;}
+.about-form .custom-container{max-width: 1570px;}
+.about-form .wrapper{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;padding: 37px 0;border-top: 3px solid #D9D9D9;border-bottom: 3px solid #D9D9D9;}
+.about-form .sec-heading-two{width: 34.5%;line-height: 2;}
+.about-form-box{width: 65%;}
+.about-form-input {display: flex;align-items: center;justify-content: space-between;}
+.about-form-input .field{width: 375px;padding: 0 22px;}
+.about-form-input .field input{background: #F6F6F6;color: #282828;font-family: var(--primary-font);font-size: 26px;font-style: normal;font-weight: 600;line-height:1.27;min-height: 73px;padding: 0 34px;border: 0;width: 100%;}
+.about-form-input  .btn-custom span{white-space: nowrap;}
+.testimonial{padding: 97px 0;background: #F3C6C3;}
+.testimonial .custom-container{max-width: 1750px;}
+.testimonial .custom-container .wrapper{background-color: var(--white);padding: 53px;}
+.testimonial-slider{margin: 40px auto 25px;text-align: center; width: 59%;}
+.testimonial-slider .content{margin-top: 60px;}
+.testimonial-slider .content p + p{margin-top: 40px;}
+.testimonial-slider h3{font-size: 55px;line-height: 1.42;font-family: var(--primary-font);margin-top: 40px;}
+.testimonial-slider h4{font-size: 26px;line-height: 1.52;font-family: var(--primary-font);}
+.testimonial-slider .slick-list{margin-bottom: 44px;}
+.client-logo-horizone{flex-wrap: inherit;margin: 0 auto;width: 1040px;max-width: 1040px;align-items: center;display: flex;align-items: center;justify-content: space-between;}
+.client-logo.client-logo-horizone .item{min-width: 25%;}
+.social-media-sec{padding: 37px 0;}
+.social-media-sec h4{background: #F3C6C3;text-align: center;color: #282828;font-family: var(--primary-font);font-size: 35px;font-style: normal;font-weight: 600;padding: 10px;}
+.social-media-sec .social-media{display: flex;justify-content: center;padding: 43px 0 12px 0;}
+.social-media-sec .social-media a{width: 60px;aspect-ratio: 100/100;border-radius: 100%;color:var(--white);background-color: #F3C6C3;display: flex;justify-content: center;align-items: center;font-size: 30px;margin: 0 25px;}
 
 @media only screen and (min-width: 768px){
   .display-mobile{display: none;}
 }
+@media only screen and (min-width: 1501px) and (max-width: 1919px){
+  .custom-container,
+  .custom-container-1470{max-width:1470px !important;}
+  .about-me{padding: 100px 0;}
+  .free-resources{margin: 100px 0;}
+  .free-resources .list {width: 50.4%;}
+  .trending-latest-tabs .main-tab {top:0;}
+  .trending-latest{padding: 100px 0;}
+  .favorite-shop{padding: 100px 0;}
+  .thanks-content h2 {font-size: 60px;}
+  .courses .image-box {width: 41.57%;}
+  .courses .content .details {padding: 36px 0;}
+  .the-latest-tabs .main-tab ul li span {font-size: 36px;padding: 0 0 0 25px;}
+  .the-latest-list .item {padding: 26px 30px 26px 0;}
+  .the-latest-list .item p{font-size: 26px;}
+  .our-client{padding: 100px 0;}
+
+  .about-sec{padding: 100px 0 70px;}
+  .about-sec .images::after{top:-35px;right: -25px;}
+  .other-about-sec{padding: 100px 0;}
+  .about-sec .other-info { margin-top: 21px;}
+  .about-sec .other-info .sec-heading-two{font-size: 60px;}
+  .about-form{padding: 50px 0;}
+  .about-form .sec-heading-two{font-size: 48px;}
+  .about-form-input .field input{min-height: 58px;}
+  .about-form-input .field input {padding: 0 25px;}
+  .testimonial{padding: 70px 0;}
+  .testimonial-slider{width: 80%;}
+
+}
 @media only screen and (min-width: 1281px) and (max-width: 1500px){
- 
+  .custom-container,
+  .custom-container-1470{max-width:1250px !important;}
+  p{font-size: 20px;}
+  .sec-heading {font-size: 48px;}
+  .sec-heading-two {font-size: 48px;}
+  .sub-heading{font-size: 40px;}
+  .btn-custom span {padding: 10px 30px;}
+  .raves-reviews-slider {margin-top: 30px;padding: 40px 70px;}
+  .raves-reviews-slider .slick-prev {left: 20px;}
+  .raves-reviews-slider .slick-next {right: 20px;}
+
+  .about-me{padding: 70px 0 100px;}
+  .about-me .image-box .left-bottom-image {left: -70px; bottom: -70px;}
+  .help-box .item-box .content h3{font-size: 48px;}
+  .free-resources .list .content h3{font-size: 36px;}
+  .free-resources .list .content h4{font-size: 24px;}
+  .free-resources .list .item{padding: 30px 0;}
+  .free-resources .sec-heading-two{font-size: 48px;}
+  .free-resources{margin: 75px 0;}
+  .trending-latest{padding: 75px 0;}
+  .trending-latest-tabs .sub-tab-left{width: 45%;margin-bottom: 0;}
+  .trending-latest-tabs .main-tab {top: 0;}
+  .trending-latest-tabs .sub-tab-left h2{margin-bottom: 25px;}
+  .favorite-shop h2 span{font-size: 58px;}
+  .favorite-shop{padding: 75px 0;}
+  .product-slider{margin: 30px 0;}
+  .raves-reviews{padding: 75px 0;}
+  .courses{padding: 75px 0;}
+  .the-latest-tabs .main-tab ul li span{padding: 15px;    min-height: 140px;font-size: 30px;}
+  .the-latest-list .item p{font-size: 20px;}
+  .the-latest-list .item{padding: 20px 20px 20px 0;}
+  .our-client{padding: 75px 0;}
+  .home-form .image-box{margin-top: -75px;}
+  .home-form .content {width: 60%;}
+
+  .about-sec{padding: 75px 0 50px;}
+  .about-sec .images::after{top:-35px;right: -25px;}
+  .about-sec .content {padding-top: 0;}
+  .other-about-sec{padding: 75px 0;}
+  .other-about-sec p{font-size: 30px;}
+  .about-form{padding: 50px 0;}
+  .about-form .sec-heading-two{width: 25%;font-size: 40px;}
+  .about-form-box{width: 75%;}
+  .about-form-input .field input{min-height: 58px;}
+  .about-form-input .field input {padding: 0 25px;}
+  .about-form-input .field {padding: 0 15px;}
+  .testimonial{padding: 70px 0;}
+  .testimonial-slider{width: 80%;}
+
+
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1280px){
@@ -436,7 +558,7 @@ bottom: -100px; z-index: 1;}
   .custom-container-1470{max-width:950px !important;}
   p{font-size: 18px;}
   .sec-heading {font-size: 48px;}
-  .sec-heading-two {font-size: 50px;}
+  .sec-heading-two {font-size: 48px;}
   .sub-heading{font-size: 40px;}
   .btn-custom span {padding: 10px 30px;}
   .raves-reviews-slider {margin-top: 30px;padding: 40px 70px;}
@@ -506,9 +628,36 @@ bottom: -100px; z-index: 1;}
   .home-form-input input {max-width: 215px;}
   .home-form-box {margin-top: 15px;}
   .lets-do-button {margin-top: 20px;}
-
-
-
+  .about-sec{padding: 60px 0 40px;}
+  .about-sec .images::after {width: 30%;right: -15px;top:-15px}
+  .about-sec .content{padding-top: 0;}
+  .about-sec .sec-heading {font-size: 38px;}
+  .about-sec .line{margin: 20px 0;}
+  .about-sec .content p + p{margin-top: 20px;}
+  .about-sec .other-info{margin-top: 20px;}
+  .other-about-sec{padding: 40px 0;}
+  .other-about-sec p{font-size: 24px;}
+  .about-form{padding: 30px 0;}
+  .about-form .wrapper{padding: 30px 0;}
+  .about-form .sec-heading-two{font-size: 30px;width: 25%;}
+  .about-form-box{width: 75%;}
+  .about-form-input .field {padding: 0 8px;}
+  .about-form-input .field input {font-size: 20px;min-height: 55px;padding: 0 15px;}
+  .testimonial{padding: 40px 0;}
+  .testimonial .custom-container .wrapper{padding: 25px;}
+  .testimonial-slider{margin: 20px auto;width: 100%;}
+  .quota-icon svg{height: 30px;}
+  .testimonial-slider .content{margin-top: 25px;}
+  .testimonial-slider .content p + p{margin-top: 25px;}
+  .testimonial-slider h3{margin-top: 25px;font-size: 36px;}
+  .testimonial-slider h4{font-size: 20px;}
+  .testimonial-slider .slick-list{margin-bottom: 25px;}
+  .client-logo-horizone{width: 100%;max-width: 100%;}
+  .client-logo-horizone .item{padding: 10px 20px;}
+  .client-logo-horizone .item img{max-width: 100%;}
+  .social-media-sec h4{font-size: 26px;}
+  .social-media-sec .social-media{padding: 25px 0 0 0;}
+  .social-media-sec .social-media a{ font-size: 24px;width: 48px; margin: 0 15px;}
 
   
 }
@@ -616,6 +765,39 @@ bottom: -100px; z-index: 1;}
   .footer-menu {padding-left: 30px;}
   .footer-top .content {width: 35.2%;}
 
+
+  .about-sec{padding: 25px 0;}
+  .about-sec .images::after {top: -17px;right: -17px;width:50%;}
+  .about-sec .line{margin: 15px 0;}
+  .about-sec .content p + p{margin-top: 15px;}
+  .about-sec .other-info{margin: 20px 0 0 0;}
+  .about-sec .other-info .sec-heading-two{font-size: 24px;}
+  .other-about-sec{padding: 25px 0;}
+  .other-about-sec p{font-size: 20px;}
+  .about-form{padding: 25px 0;}
+  .about-form .wrapper{padding: 15px 0;flex-wrap: wrap;}
+  .about-form .wrapper .sec-heading-two{width: 100%;text-align: center;}
+  .about-form-box{width: 100%;}
+  .about-form-input .field{margin-bottom: 10px;}
+  .about-form-input .field input{min-height: 41px;padding: 0 15px;font-size: 16px;}
+  .about-form-input .btn-custom{margin: 0 auto;}
+  .testimonial{padding: 25px 0;}
+  .testimonial .custom-container .wrapper{padding: 15px;}
+  .testimonial-slider{width: 100%;margin:25px 0;}
+  .quota-icon svg{height: 40px;}
+  .testimonial-slider .content{margin-top: 25px;}
+  .testimonial-slider .content p + p{margin-top: 15px;}
+  .testimonial-slider h3{margin-top: 25px;font-size: 30px;}
+  .testimonial-slider h4{font-size: 18px}
+  .testimonial-slider .slick-list{margin-bottom: 15px;}
+  .client-logo-horizone{max-width: 100%;width: 100%;}
+  .client-logo-horizone .item{padding: 10px 25px;}
+  .client-logo-horizone .item img{max-width: 100%;margin: 0 auto;}
+  .social-media-sec{padding: 0;}
+  .social-media-sec h4{font-size: 24px;}
+  .social-media-sec .social-media{padding: 15px 0;}
+  .social-media-sec .social-media a {width: 40px;font-size: 20px;margin: 0 10px;}
+
   
 
 }
@@ -626,7 +808,7 @@ bottom: -100px; z-index: 1;}
   p{font-size: 14px;}
   .display-desktop{display: none;}
   .sec-heading {font-size: 24px;}
-  .sec-heading-two {font-size: 36px;}
+  .sec-heading-two {font-size: 30px;}
   .sub-heading {font-size: 22px;}
   .line{margin: 12px auto;width: 100px;}
   .v-line {height: 50px;}
@@ -764,12 +946,42 @@ bottom: -100px; z-index: 1;}
   .footer-menu ul li a {line-height: 2px;}
   .other-menu a {padding: 0 10px;}
   .copyright-with-menu p{padding: 0 10px;}
-
-
-
-
-
-
+  .about-sec{padding: 25px 0;}
+  .about-sec .wrapper{flex-direction: column-reverse;}
+  .about-sec .content{width: 100%;text-align: center;}
+  .about-sec .images{width: 100%;}
+  .about-sec .images::after{display: none;}
+  .about-sec .line{margin: 15px auto;}
+  .about-sec .content p + p{margin-top: 15px;}
+  .about-sec .other-info{margin: 20px 0 0 0;text-align: center;}
+  .about-sec .other-info .sec-heading-two{font-size: 24px;}
+  .other-about-sec{padding: 25px 0;}
+  .other-about-sec p{font-size: 16px;}
+  .about-form{padding: 25px 0;}
+  .about-form .wrapper{padding: 15px 0;flex-wrap: wrap;}
+  .about-form .wrapper .sec-heading-two{width: 100%;text-align: center;}
+  .about-form-box{width: 100%;}
+  .about-form-input{flex-wrap: wrap;}
+  .about-form-input .field{width: 100%;padding: 0;margin-bottom: 10px;}
+  .about-form-input .field input{min-height: 41px;padding: 0 15px;font-size: 16px;}
+  .about-form-input .btn-custom{margin: 0 auto;}
+  .testimonial{padding: 25px 0;}
+  .testimonial .custom-container .wrapper{padding: 15px;}
+  .testimonial-slider{width: 100%;margin:25px 0;}
+  .quota-icon svg{height: 40px;}
+  .testimonial-slider .content{margin-top: 25px;}
+  .testimonial-slider .content p + p{margin-top: 15px;}
+  .testimonial-slider h3{margin-top: 25px;font-size: 30px;}
+  .testimonial-slider h4{font-size: 18px}
+  .testimonial-slider .slick-list{margin-bottom: 15px;}
+  .client-logo-horizone{display: block;max-width: 100%;width: 100%;}
+  .client-logo-horizone .slick-track{display: flex;align-items: center;}
+  .client-logo-horizone .item{padding: 10px 25px;}
+  .client-logo-horizone .item img{max-width: 100%;margin: 0 auto;}
+  .social-media-sec{padding: 0;}
+  .social-media-sec h4{font-size: 24px;}
+  .social-media-sec .social-media{padding: 15px 0;}
+  .social-media-sec .social-media a {width: 40px;font-size: 20px;margin: 0 10px;}
   
 
 

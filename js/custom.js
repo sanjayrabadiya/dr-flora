@@ -58,6 +58,15 @@ $(document).ready(function(){
 			nextArrow:"<div class='slick-next'></div>",		    
 		});
 	}
+	if($('.testimonial-slider').length > 0) {
+		$('.testimonial-slider').slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+		    slidesToScroll: 1,
+		    arrows: false,		   	    
+		});
+	}
 	if($('.instagram-slider').length > 0) {
 		$('.instagram-slider').slick({
 			dots: false,
@@ -120,6 +129,14 @@ function checkSlider(){
 		prevArrow:"<div class='slick-prev'></div>",
 		nextArrow:"<div class='slick-next'></div>",
       });
+	  $('.client-logo-horizone').slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+		arrows:true,
+		prevArrow:"<div class='slick-prev'></div>",
+		nextArrow:"<div class='slick-next'></div>",
+      });
       slickSliderActive = true;
     }
   } 
@@ -127,6 +144,7 @@ function checkSlider(){
     if(slickSliderActive == true) {
       $('.mobile-slider').slick('unslick');
 	  $('.client-logo').slick('unslick');
+	  $('.client-logo-horizone').slick('unslick');
       slickSliderActive = false;
     }
     
